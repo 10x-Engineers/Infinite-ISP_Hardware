@@ -17,7 +17,7 @@ Infinite-ISP is a full-stack ISP development platform - from algorithm developme
 
 # Infinite-ISP RTL
 
-Infinite-ISP RTL is an RTL development project that uses Xilinx Vivado 2022.1 as the development environment. The repo uses **[Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel)** (RM) as the baseline to match its outputs. Each block in the RM has a corresponding verilog module in the RTL repo. Modules have been categorized into two groups namely ISP and VIP for the ease of reusability in the FPGA integration process.    
+Infinite-ISP_RTL is an RTL development project utilizing Xilinx Vivado 2022.1 as the development environment. The repository uses [Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel) (RM) as baseline to match outputs. Each block in the RM is mapped to a corresponding Verilog module within the RTL repository. For FPGA integration and enhanced reusability, these modules are categorized into two groups : ISP and VIP.    
 
 ![](doc/assets/Infinite-ISP_v1.0-pipeline.png)
 
