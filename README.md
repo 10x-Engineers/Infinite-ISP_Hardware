@@ -17,7 +17,7 @@ Infinite-ISP is a full-stack ISP development platform - from algorithm developme
 
 # Infinite-ISP RTL
 
-Infinite-ISP_RTL is a project that encapsulates the development of RTL for the infinite-ISP (Image Signal Processor ). The repository uses [Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel) (RM) as the reference and ensures a bit accurate translation of the reference model. This workflow facilitates the integration of expertise in both hardware design and algorithm development. Each block in the RM is mapped to a corresponding Verilog module within the RTL repository. For FPGA integration and enhanced reusability, these modules are categorized into two groups: ISP and VIP.    
+Infinite-ISP_RTL is a project that encapsulates the development of RTL for the infinite-ISP (Image Signal Processor). The repository uses [Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel) (RM) as the reference and ensures a bit accurate translation of the reference model. This workflow facilitates the integration of expertise in both hardware design and algorithm development. Each block in the RM is mapped to a corresponding Verilog module within the RTL repository. For FPGA integration and enhanced reusability, these modules are categorized into two groups: ISP and VIP.    
 
 ![](doc/assets/Infinite-ISP_v1.0-pipeline.png)
 
