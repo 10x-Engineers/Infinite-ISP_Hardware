@@ -6,25 +6,25 @@ Infinite-ISP is a full-stack ISP development platform - from algorithm developme
 
 | Sr.     | Repository name        | Description      | 
 |---------| -------------  | ------------- |
-| 1  | **[Infinite-ISP_AlgorithmDesign](https://github.com/10x-Engineers/Infinite-ISP)**                     | Python based model of the Infinite-ISP pipeline for algorithm development |
+| 1  | **[Infinite-ISP_AlgorithmDesign](https://github.com/10x-Engineers/Infinite-ISP)**   | Python based model of the Infinite-ISP pipeline for algorithm development |
 | 2  | **[Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel)**                      | Python based fixed-point model of the Infinite-ISP pipeline for hardware implementation |
 | 3  | **[Infinite-ISP_RTL](https://github.com/10x-Engineers/Infinite-ISP_RTL)** :anchor: | RTL development of the Infinite-ISP pipeline **[(Request Access)](https://docs.google.com/forms/d/e/1FAIpQLSfOIldU_Gx5h1yQEHjGbazcUu0tUbZBe0h9IrGcGljC5b4I-g/viewform?usp=sharing)** |
-| 4  | **[InfiniteISP_Automated_Testing](Repo_link)** | Streamline the testing and debugging process of RTL developement using [Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel) |
-| 5  | **[InfiniteISP_FPGA_XCK26](Repo_link)** | FPGA integration for the Xilinx® Kria KV260’s XCK26 Zynq UltraScale + MPSoC |
+| 4  | **[Infinite-ISP_Automated_Testing](https://github.com/10x-Engineers/Infinite-ISP_Automated_Testing)** | Streamline the testing and debugging process of RTL developement using [Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel) |
+| 5  | **FPGA Implementation** | FPGA integration of Infinite-ISP on different FPGAs <br>  <ul><li>Xilinx® Kria KV260’s XCK26 Zynq UltraScale + MPSoC **[Infinite-ISP_FPGA_XCK26](https://github.com/10x-Engineers/Infinite-ISP_FPGA_XCK26)**</li></ul>   |
 | 6  | **[Infinite-ISP_FPGABinaries](https://github.com/10x-Engineers/Infinite-ISP_FPGABinaries)**         | FPGA binaries (bitstream + firmware executable) for the Xilinx® Kria KV260’s XCK26 Zynq UltraScale + MPSoC|
 | 7  | **[Infinite-ISP_TuningTool](https://github.com/10x-Engineers/Infinite-ISP_TuningTool)**                              | Collection of calibration and analysis tools for the Infinite-ISP |
 
 
 # Infinite-ISP RTL
 
-Infinite-ISP_RTL is an RTL development project that allows combining skills in both hardware design and algorithm development. The repository uses [Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel) (RM) as a baseline to match outputs. Each block in the RM is mapped to a corresponding Verilog module within the RTL repository. For FPGA integration and enhanced reusability, these modules are categorized into two groups: ISP and VIP.    
+Infinite-ISP_RTL is an RTL development project. The repository uses [Infinite-ISP_ReferenceModel](https://github.com/10x-Engineers/Infinite-ISP_ReferenceModel) (RM) as a baseline to match outputs. This workflow allows combining skills in both hardware design and algorithm development. Each block in the RM is mapped to a corresponding Verilog module within the RTL repository. For FPGA integration and enhanced reusability, these modules are categorized into two groups: ISP and VIP.    
 
 ![](doc/assets/Infinite-ISP_v1.0-pipeline.png)
 
 ISP RTL pipeline for `Infinite-ISP_RTL v1.0`
 
 ## Objectives
-Many open-source ISPs are available over the internet. Most of them are developed by individual contributors, each having its strengths. In addition, they are generally software-based and don't have RTL support. This project aims to centralize all the open-source ISP development to a single place enabling the ISP developers to have a single platform to contribute both in algorithm development and the subsequent steps for preparing it for FPGAs and ASICs. InfiniteISP will not only contain conventional algorithms but also aim to contain state-of-the-art deep learning algorithms, enabling a clean comparison between the two. This project has no bounds to ideas and is aimed to include any algorithm that improves the overall results of the pipeline regardless of their complexity.
+Many open-source ISPs are available over the internet. Most of them are developed by individual contributors, each having its strengths. In addition, they are generally software-based and don't have RTL support. This project aims to centralize all the open-source ISP development to a single place enabling the ISP developers to have a single platform to contribute both in algorithm development and the subsequent steps for preparing it for FPGAs and ASICs.
 
 ## How to Get Access
 To access Infinite-ISP_RTL, please fill in a request form at **[Link](https://docs.google.com/forms/d/e/1FAIpQLSfOIldU_Gx5h1yQEHjGbazcUu0tUbZBe0h9IrGcGljC5b4I-g/viewform?usp=sharing)**. Access to the repository will be granted by 10xEngineers within one business day. You will receive an email notification confirming your access status.
@@ -32,9 +32,11 @@ To access Infinite-ISP_RTL, please fill in a request form at **[Link](https://do
 ## Resource Utilization
 
    Below are the resource utilization tables compiled for Xilinx® Kria KV260 Development Board using Xilinx® Vivado IDE v2022.1.
+
     
    **Resource utilization for ISP (2048x1536 resolution):**
-   | Block Name          | LUT     | FF     | BRAM  | DSP   |
+   
+   | Block Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                          | LUT     | FF     | BRAM  | DSP   |
    | ------------------- | :---------: | :---------: | :---------: | :---------: |
    | Crop                |  159    | 144    | 0     | 0     |
    | DPC                 |  652    | 642    | 4     | 0     |
@@ -53,7 +55,8 @@ To access Infinite-ISP_RTL, please fill in a request form at **[Link](https://do
    | isp_top             |  38771  | 16694  | 40.5  | 58    |
    
    **Resource utilization for VIP (2048x1536 resolution):**
-   | Block Name          | LUT     | FF     | BRAM  | DSP   |
+   
+   | Block Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                          | LUT     | FF     | BRAM  | DSP   |
    | ------------------- | :---------: | :---------: | :---------: | :---------: |
    | RGBC                | 388     | 231    | 0     | 0     |
    | IRC                 | 124     | 42     | 0     | 0     |
@@ -63,9 +66,11 @@ To access Infinite-ISP_RTL, please fill in a request form at **[Link](https://do
    | vip_top             | 1983    | 1251   | 1     | 0     |
 
    **Resource utilization for ISP-Pipeline (2048x1536 resolution):**
-   | Block Name          | LUT     | FF     | BRAM  | DSP   |
+   
+   | Block Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                          | LUT     | FF     | BRAM  | DSP   |
    | ------------------- | :---------: | :---------: | :---------: | :---------: |
    | isp_top + vip_top   | 40754   | 17945  | 41.5  | 58    |
+
 
 
 ## License 
