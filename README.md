@@ -82,3 +82,13 @@ This project is licensed under Apache 2.0 (see [LICENSE](LICENSE) file).
 
 ## Acknowledgments
 - The Infinite-ISP_RTL project started of from the inspiration of [bxinquan/zynqmp_cam_isp_demo](https://github.com/bxinquan/zynqmp_cam_isp_demo.git)
+
+## Contact
+For any inquiries or feedback, feel free to reach out.
+
+Email: isp@10xengineers.ai
+
+Website: http://www.10xengineers.ai
+
+LinkedIn: https://www.linkedin.com/company/10x-engineers/
+
