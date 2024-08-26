@@ -31,7 +31,7 @@ ISP RTL pipeline for `Infinite-ISP_RTL v1.0`
 Many open-source ISPs are available over the internet. Most of them are developed by individual contributors, each having its strengths. In addition, they are generally software-based and don't have RTL support. This project aims to centralize all the open-source ISP development to a single place enabling the ISP developers to have a single platform to contribute both in algorithm development and the subsequent steps for preparing it for FPGAs and ASICs.
 
 ## How to Get Access
-To access Infinite-ISP_RTL, please fill in a request form at **[Link](https://docs.google.com/forms/d/e/1FAIpQLSfOIldU_Gx5h1yQEHjGbazcUu0tUbZBe0h9IrGcGljC5b4I-g/viewform?usp=sharing)**. Access to the repository will be granted by 10xEngineers within one business day. You will receive an email notification confirming your access status.
+To access, please fill in a request form at **[Link](https://docs.google.com/forms/d/e/1FAIpQLSfOIldU_Gx5h1yQEHjGbazcUu0tUbZBe0h9IrGcGljC5b4I-g/viewform?usp=sharing)**. Access to the repository will be granted by 10xEngineers within one business day. You will receive an email notification confirming your access status.
 
 ## Resource Utilization
 
